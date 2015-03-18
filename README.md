@@ -4,7 +4,7 @@
 "author": "Kovah"
 ---
 
-![InvoicePlane](http://invoiceplane.com/content/logo/PNG/logo_300x150.png)
+![InvoicePlane](https://invoiceplane.com/content/logo/PNG/logo_300x150.png)
 
 # InvoicePlane DevWiki
 
