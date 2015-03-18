@@ -39,22 +39,7 @@ We are following some strict development guidelines while developing.
 
 *   We use [SASS](http://sass-lang.com/) only.
 
-### 4. Setup your Development Environment
-
-After copying / checking out the InvoicePlane code to your local machine you have to follow these steps to completely configure the development environment
-
-1. Install [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-2. Install [Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)
-3. Install [Bower](http://bower.io/)
-4. Run the following commands:
-```
-composer install
-npm install
-bower install
-gulp
-```
-
-#### Tools for development
+### Tools for development
 
 We received some licenses for commercial development tools you can use if you want. Please contact use at `mail@invoiceplane.com` to get the license / access as we can't publish them here.
 
@@ -69,19 +54,12 @@ We received some licenses for commercial development tools you can use if you wa
 3. If you work on an issue please add the issue ID (e.g. IPT-12) to the commit.
 4. Submit a pull request and explain what you have done.
 
-#### Database Model
-
-We use a pre-defined database model for InvoicePlane you can check out [here](https://my.vertabelo.com/public-model-view/FTM7kwegMsV99IGYK5h804p1wvrFzBEZFYvtAvCeOpLps1CsXLc4vRDyC4gpgR1C).  
-
-* If you want to **add a new field** please leave a comment at the [Database Model Thread](https://community.invoiceplane.com/t/v2-database-scheme/94) and it will be added.
-* If you want to **change a field** please leave a comment at the [Database Model Thread](https://community.invoiceplane.com/t/v2-database-scheme/94) so we can discuss this change as everyone has to be notified about this change.
-
 * * *
 
 #### Links
 
-* [Roadmap](https://github.com/InvoicePlane/InvoicePlane-v2/wiki/Roadmap)
-* [Issue Tracker / Agile Board](https://development.invoiceplane.com/browse/IPT)
+* [Roadmap](https://github.com/InvoicePlane/InvoicePlane/wiki/Roadmap)
+* [Issue Tracker / Agile Board](https://development.invoiceplane.com/)
 * [Gitter Chatroom](https://gitter.im/InvoicePlane/InvoicePlane/InvoicePlaneDevelopment)
 * [Community: Development Discussion](https://community.invoiceplane.com/c/development-discussion)
   

@@ -14,7 +14,7 @@ This is the official development documentation for the [InvoicePlane](https://in
 
 #### Links
 
-* [Roadmap](https://github.com/InvoicePlane/InvoicePlane-v2/wiki/Roadmap)
-* [Issue Tracker / Agile Board](https://development.invoiceplane.com/browse/IPT)
+* [Roadmap](https://github.com/InvoicePlane/InvoicePlane/wiki/Roadmap)
+* [Issue Tracker / Agile Board](https://development.invoiceplane.com/)
 * [Gitter Chatroom](https://gitter.im/InvoicePlane/InvoicePlane/InvoicePlaneDevelopment)
 * [Community: Development Discussion](https://community.invoiceplane.com/c/development-discussion)

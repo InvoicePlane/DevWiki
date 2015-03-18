@@ -25,7 +25,7 @@ Font Awesome ([Website](http://fortawesome.github.io/Font-Awesome/) | [Documenta
 **JavaScript Libraries**   
 jQuery UI ([Website](https://jqueryui.com) | [Documentation](http://api.jqueryui.com))   
 Bootstrap Datepicker ([Website](https://github.com/eternicode/bootstrap-datepicker/) | [Documentation](http://bootstrap-datepicker.readthedocs.org/en/latest/))   
-Bootstrap Typeahead ([Website / Documentation](https://twitter.github.io/typeahead.js/examples/))
+Bootstrap Typeahead ([Website / Documentation](https://twitter.github.io/typeahead.js/examples/))   
 SCEditor (WYSIWYG) ([Website / Documentation](http://www.sceditor.com))   
 Select2 v3 ([Website / Documentation](https://select2.github.io))   
 
