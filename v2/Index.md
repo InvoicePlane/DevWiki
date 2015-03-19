@@ -25,9 +25,26 @@ bower install
 gulp
 ```
 
-## Database Model
+## Used Frameworks / Libraries
 
-We use a pre-defined database model for InvoicePlane which can be viewed [here](https://my.vertabelo.com/public-model-view/FTM7kwegMsV99IGYK5h804p1wvrFzBEZFYvtAvCeOpLps1CsXLc4vRDyC4gpgR1C).  
+InvoicePlane v1.x.x uses the following frameworks / libraries:
 
-* If you want to **add a new field** please leave a comment at the [Database Model Thread](https://community.invoiceplane.com/t/v2-database-scheme/94) and it will be added.
-* If you want to **change a field** please leave a comment at the [Database Model Thread](https://community.invoiceplane.com/t/v2-database-scheme/94) so we can discuss this change as everyone has to be notified about this change.
+**Main Framework**   
+Laravel 5 ([Website](http://www.laravel.com/) | [Documentation](http://www.laravel.com/docs/))
+
+**UI Framework**   
+Bootstrap 3 ([Website](http://getbootstrap.com) | [Documentation](http://getbootstrap.com/getting-started/))   
+jQuery 1.11.x ([Website](https://jquery.com) | [Documentation](http://api.jquery.com))  
+
+**Fonts / Icons**   
+Font Awesome ([Website](http://fortawesome.github.io/Font-Awesome/) | [Documentation](http://fortawesome.github.io/Font-Awesome/icons/))
+
+**JavaScript Libraries**   
+jQuery UI ([Website](https://jqueryui.com) | [Documentation](http://api.jqueryui.com))   
+Bootstrap Datepicker ([Website](https://github.com/eternicode/bootstrap-datepicker/) | [Documentation](http://bootstrap-datepicker.readthedocs.org/en/latest/))   
+Bootstrap Typeahead ([Website / Documentation](https://twitter.github.io/typeahead.js/examples/))   
+SCEditor (WYSIWYG) ([Website / Documentation](http://www.sceditor.com))   
+Select2 v3 ([Website / Documentation](https://select2.github.io))   
+
+**Browser Compatibility**   
+Modernizr 2 ([Website / Documentation](http://modernizr.com))   
