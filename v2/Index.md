@@ -18,11 +18,12 @@ After that you have to install some tools needed to work with the InvoicePlane v
 2. Install [Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)   
 3. Install [Bower](http://bower.io/)   
 4. Then run the following commands:   
+
 ```
-composer install
-npm install
-bower install
-gulp
+$ composer install
+$ npm install
+$ bower install
+$ gulp
 ```
 
 ## Used Frameworks / Libraries
