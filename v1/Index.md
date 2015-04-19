@@ -31,3 +31,13 @@ Select2 v3 ([Website / Documentation](https://select2.github.io))
 
 **Browser Compatibility**   
 Modernizr 2 ([Website / Documentation](http://modernizr.com))   
+
+### Setup your Development Environment
+
+It's pretty easy to configure InvoicePlane for development. Just follow the next steps to start.   
+
+1. Create the following directory: `/application/config/development`   
+You are now able to override all configuration variables without changing any source files.   
+2. Copy the file `/application/config/config.php` into the new development folder and set `log_threshold` to 2.
+3. Copy the file `/application/config/database.php` into the new development folder and insert the database credentials for the database you want to use for development.
+4. Ready!
