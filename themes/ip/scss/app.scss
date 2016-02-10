@@ -1,0 +1,274 @@
+/*!
+ * Invoice?Plane DevWiki Styles
+ */
+
+@import "core-vars";
+@import "bootstrap";
+@import "font-awesome";
+
+/*
+|   =========================================================
+|   Base layout
+|   =========================================================
+*/
+
+#app {
+  width: 100%;
+
+  @media screen and (min-width: $screen-lg) {
+    display: table;
+  }
+}
+
+#sidebar {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: $gray-dark;
+  color: $gray-lighter;
+  left: -320px;
+  z-index: $zindex-navbar;
+  @include transition-std(left);
+
+  &.show-sidebar {
+    left: 0;
+    @include transition-std(left);
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 15%;
+    display: table-cell;
+    vertical-align: top;
+    left: 0;
+  }
+
+  a {
+    color: $gray-lightest;
+    @include hover-focus-active {
+      color: $gray-lightest;
+    }
+  }
+
+  .sidebar-top {
+    padding: 1rem;
+    border-bottom: 1px solid lighten($gray-dark, 5%);
+  }
+}
+
+#main {
+  width: 100%;
+  padding: 1rem;
+
+  @media screen and (min-width: $screen-lg) {
+    display: table-cell;
+    vertical-align: top;
+    width: 85%;
+  }
+}
+
+.sidebar-toggle-wrapper {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.sidebar-toggle {
+  cursor: pointer;
+}
+
+.login-logo {
+  padding: 2rem 0;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+#loader {
+  display: none;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .loader-indicator {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+  }
+
+  .loader-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 1.5rem;
+    opacity: 0.85;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+
+    .loader-message {
+      position: absolute;
+      width: 100%;
+      top: 20%;
+      left: 0;
+    }
+  }
+}
+
+/*
+|   =========================================================
+|   Menu
+|   =========================================================
+*/
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  li {
+    width: 100%;
+
+    a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      padding: 0.25rem 1rem;
+      font-size: 1rem;
+
+      &:hover{
+        background-color: lighten($gray-dark, 5%);
+      }
+    }
+
+    &.divider {
+      margin: 1rem 0;
+      border-bottom: 1px solid lighten($gray-dark, 10%);
+    }
+  }
+
+  .has-submenu {
+    background-color: lighten($gray-dark, 5%);
+
+    .menu-icon {
+      padding: 0.25rem 0.5rem;
+
+      &:before {
+        content: "\f107";
+      }
+    }
+
+    &.collapsed {
+      background-color: $gray-dark;
+
+      &:hover{
+        background-color: lighten($gray-dark, 5%);
+      }
+
+      .menu-icon:before {
+        content: "\f104";
+      }
+    }
+  }
+
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: lighten($gray-dark, 5%);
+
+    li {
+      padding: 0;
+
+      a {
+        font-size: 0.85rem;
+
+
+        &:hover {
+          background-color: lighten($gray-dark, 10%);
+        }
+      }
+
+      &.divider {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+/*
+|   =========================================================
+|   Forms
+|   =========================================================
+*/
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/*
+|   =========================================================
+|   Additional icon and text styles
+|   =========================================================
+*/
+
+.fa-fw {
+  width: 1rem;
+  text-align: center;
+}
+
+.fa-margin-right {
+  margin-right: 0.5rem;
+}
+
+.fa-margin-left {
+  margin-left: 0.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*
+|   =========================================================
+|   Various other styles
+|   =========================================================
+*/
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: $gray-lightest;
+  border-left: 1px solid $gray-lighter;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darken($gray-lighter, 10%);
+}

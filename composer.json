@@ -1,0 +1,20 @@
+{
+  "description" : "InvoicePlane DevWiki",
+  "name" : "InvoicePlane/InvoicePlane-DevWiki",
+  "require": {
+    "php": ">=5.4",
+    "justinwalsh/daux.io": "^0.1.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"copy('vendor/justinwalsh/daux.io/daux.phar', 'daux.phar');\"",
+      "php -r \"copy('vendor/justinwalsh/daux.io/index.php', 'index.php');\"",
+      "php -r \"copy('vendor/justinwalsh/daux.io/global.json', 'global.json');\""
+    ],
+    "post-update-cmd": [
+      "php -r \"copy('vendor/justinwalsh/daux.io/daux.phar', 'daux.phar');\"",
+      "php -r \"copy('vendor/justinwalsh/daux.io/index.php', 'index.php');\"",
+      "php -r \"copy('vendor/justinwalsh/daux.io/global.json', 'global.json');\""
+    ]
+  }
+}

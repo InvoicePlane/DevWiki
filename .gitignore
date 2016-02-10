@@ -1,0 +1,12 @@
+/node_modules
+/themes/ip/css/*.min.css
+/themes/ip/fonts/font-awesome
+/themes/ip/css/*.min.css.map
+/themes/ip/js/*.min.js
+/themes/ip/js/*.min.js.map
+/themes/vendor
+/vendor
+
+daux.phar
+global.json
+index.php
