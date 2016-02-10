@@ -12,7 +12,7 @@
   "quotmark"      : "double",
   "undef"         : true,
   "unused"        : true,
-  "globalstrict"  : true,
+  "globalstrict"  : false,
   "browser"       : true,
   "devel"         : true,
   "jquery"        : true,
