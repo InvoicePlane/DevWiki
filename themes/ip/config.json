@@ -5,7 +5,8 @@
   ],
   "js": [
     "<theme_url>js/dependencies.min.js",
-    "<theme_url>js/app.min.js"
+    "<theme_url>js/app.min.js",
+    "<theme_url>js/prism.min.js"
   ],
   "variants": {
     "default": {

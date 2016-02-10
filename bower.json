@@ -4,6 +4,7 @@
     "bootstrap": "~4.0.0-alpha.2",
     "fontawesome": "~4.5",
     "jquery": "~2.1",
-    "tether": "~1.1.1"
+    "tether": "~1.1.1",
+    "prism": "^1.4.1"
   }
 }

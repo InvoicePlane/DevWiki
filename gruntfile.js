@@ -41,6 +41,20 @@ module.exports = function (grunt) {
                         "themes/vendor/tether/dist/js/tether.js",
                         "themes/vendor/bootstrap/dist/js/bootstrap.js"
                     ],
+                    "themes/ip/js/prism.min.js": [
+                        "themes/vendor/prism/components/prism-core.js",
+                        "themes/vendor/prism/components/prism-clike.js",
+                        "themes/vendor/prism/components/prism-markup.js",
+                        "themes/vendor/prism/plugins/line-numbers/prism-line-numbers.js",
+                        "themes/vendor/prism/components/prism-css.js",
+                        "themes/vendor/prism/components/prism-javascript.js",
+                        "themes/vendor/prism/components/prism-git.js",
+                        "themes/vendor/prism/components/prism-markdown.js",
+                        "themes/vendor/prism/components/prism-php.js",
+                        "themes/vendor/prism/components/prism-php-extras.js",
+                        "themes/vendor/prism/components/prism-scss.js",
+                        "themes/vendor/prism/components/prism-sql.js"
+                    ],
                     "themes/ip/js/app.min.js": [
                         "themes/ip/js/app.js"
                     ]
