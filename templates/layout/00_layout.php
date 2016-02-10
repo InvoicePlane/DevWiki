@@ -9,8 +9,8 @@
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <title>
-        <?= $page['title']; ?><?php if ($page['title'] != $params['title']) {
-            echo "- " . $params['title'];
+        <?= ucwords($page['title']); ?><?php if ($page['title'] != $params['title']) {
+            echo " - " . $params['title'];
         } ?>
     </title>
     <meta name="description" content="<?= $params['tagline']; ?>"/>
