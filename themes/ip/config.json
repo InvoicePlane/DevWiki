@@ -1,0 +1,14 @@
+{
+  "favicon": "<theme_url>img/logo_64x64.png",
+  "css": [
+    "<theme_url>css/app.min.css"
+  ],
+  "js": [
+    "<theme_url>js/dependencies.min.js",
+    "<theme_url>js/app.min.js"
+  ],
+  "variants": {
+    "default": {
+    }
+  }
+}
