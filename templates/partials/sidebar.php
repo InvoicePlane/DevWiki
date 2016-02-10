@@ -9,71 +9,38 @@
 
     <ul class="menu">
         <li>
-            <a href="#">Testlink</a>
-        </li>
-        <li>
             <a href="#" data-toggle="collapse" data-target="#submenu-clients" class="has-submenu collapsed">
-                Test Section
+                General
                 <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
             <ul id="submenu-clients" class="submenu collapse">
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
+                <li><a href="<?php echo $params['base_url'] ?>contribution">Contribution</a></li>
             </ul>
         </li>
         <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-quotes" class="has-submenu collapsed">
-                Test Section
+            <a href="#" data-toggle="collapse" data-target="#sub-v2" class="has-submenu collapsed">
+                InvoicePlane 2
                 <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
-            <ul id="submenu-quotes" class="submenu collapse">
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-invoices" class="has-submenu collapsed">
-                Test Section
-                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
-            </a>
-            <ul id="submenu-invoices" class="submenu collapse">
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-products" class="has-submenu collapsed">
-                Test Section
-                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
-            </a>
-            <ul id="submenu-products" class="submenu collapse">
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
+            <ul id="sub-v2" class="submenu collapse">
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#sub-v2-modules" class="has-submenu collapsed">
+                        Modules
+                        <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
+                    </a>
+                    <ul id="sub-v2-modules" class="submenu collapse">
+                        <li><a href="<?php echo $params['base_url'] ?>v2/modules/users">Users</a></li>
+                    </ul>
+                </li>
             </ul>
         </li>
 
         <li class="divider"></li>
 
         <li>
-            <a href="http://docs.invoiceplane.com/" target="_blank">
-                Documentation
+            <a href="http://invoiceplane.com/">
+                InvoicePlane.com
             </a>
-        </li>
-        <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-settings" class="has-submenu collapsed">
-                Settings
-                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
-            </a>
-            <ul id="submenu-settings" class="submenu collapse">
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Testlink</a></li>
-                <li><a href="#">Testlink</a></li>
-            </ul>
         </li>
     </ul>
 </div>
