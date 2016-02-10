@@ -9,7 +9,7 @@ pre[class*="language-"] {
   color: black;
   background: none;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: 'Hack', Consolas, Monaco, monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -192,7 +192,6 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: #c5c8c6;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -220,7 +219,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #1d1f21;
+  background: $gray-dark;
 }
 
 /* Inline code */
