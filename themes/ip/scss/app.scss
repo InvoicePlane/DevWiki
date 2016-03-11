@@ -14,6 +14,14 @@
 |   =========================================================
 */
 
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
 a.ext {
   margin-right: 3px;
 
@@ -39,6 +47,7 @@ pre, code {
 
 #app {
   width: 100%;
+  height: 100%;
 
   @media screen and (min-width: $screen-lg) {
     display: table;
@@ -51,10 +60,13 @@ pre, code {
   top: 0;
   bottom: 0;
   overflow: auto;
-  background: $color-sidebar-bg;
-  color: $color-sidebar-color;
+  background: $sidebar-background;
+  color: $sidebar-color;
   left: -320px;
   z-index: $zindex-navbar;
+  font-family: 'Hack', Consolas, Monaco, monospace;
+  box-shadow: 0 0 20px $sidebar-shadow;
+  
   @include transition-std(left);
 
   .sidebar-visible & {
@@ -63,23 +75,28 @@ pre, code {
   }
 
   @media screen and (min-width: $screen-lg) {
-    width: 25%;
+    position: relative;
+    width: 35%;
     display: table-cell;
     vertical-align: top;
-    left: 0;
+    left: auto;
+    height: 100%;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    width: 25%;
   }
 
   a {
-    color: $color-sidebar-link;
+    color: $sidebar-color;
     @include hover-focus-active {
-      color: $color-sidebar-link;
+      color: $sidebar-color;
     }
   }
 
   .sidebar-top {
-    font-family: 'Hack', Consolas, Monaco, monospace;
     padding: 1rem;
-    border-bottom: 1px solid lighten($color-sidebar-bg, 5%);
+    border-bottom: 1px solid lighten($sidebar-background, 5%);
   }
 }
 
@@ -93,19 +110,28 @@ pre, code {
   @media screen and (min-width: $screen-lg) {
     display: table-cell;
     vertical-align: top;
+    width: 65%;
+  }
+
+  @media screen and (min-width: $screen-xl) {
     width: 75%;
   }
-}
-
-#headerbar {
-  padding: 1rem;
-  border-bottom: 1px solid $gray-lighter;
 }
 
 .sidebar-toggle-wrapper {
   padding: 1rem;
   width: 100%;
-  border-bottom: 1px solid $gray-lighter;
+  background: $sidebar-background;
+  font-family: 'Hack', Consolas, Monaco, monospace;
+  box-shadow: 0 0 20px $sidebar-shadow;
+
+  a {
+    color: $sidebar-color;
+
+    &:hover {
+      color: $sidebar-color;
+    }
+  }
 }
 
 .sidebar-toggle {
@@ -168,10 +194,13 @@ pre, code {
 |   =========================================================
 */
 
+$sidebar-background-light: lighten($sidebar-background, 5%);
+$sidebar-background-lighter: lighten($sidebar-background, 10%);
+
 .menu {
   list-style: none;
   padding: 0;
-  margin: 0 0 0.5rem;
+  margin: $spacer 0;
 
   li {
     width: 100%;
@@ -180,25 +209,37 @@ pre, code {
       display: block;
       width: 100%;
       text-decoration: none;
-      padding: 0.7rem 1rem;
+      padding: $padding-md;
       font-size: 1rem;
+      border-left: 3px solid $sidebar-background;
 
-      &:hover{
-        background-color: lighten($color-sidebar-bg, $sidebar-bg-modifier);
+      &:hover {
+        background-color: $sidebar-background-light;
+        border-left: 3px solid $sidebar-background-light;
+      }
+
+      .fa {
+        margin-right: 1rem;
       }
     }
 
     &.divider {
-      margin: 0;
-      border-bottom: 1px solid lighten($color-sidebar-bg, ($sidebar-bg-modifier * 2));
+      margin: 1rem 0;
+      border-bottom: 1px solid $sidebar-background-lighter;
     }
   }
 
   .has-submenu {
-    background-color: lighten($color-sidebar-bg, $sidebar-bg-modifier);
+    background-color: $sidebar-background-light;
+    border-left: 3px solid $sidebar-color;
+
+    &:hover {
+      border-left: 3px solid $sidebar-color;
+    }
 
     .menu-icon {
-      padding: 0.3rem 0.5rem;
+      padding: $padding-md;
+      margin-right: 0;
 
       &:before {
         content: "\f107";
@@ -206,14 +247,24 @@ pre, code {
     }
 
     &.collapsed {
-      background-color: $color-sidebar-bg;
+      background-color: $sidebar-background;
+      border-left: 3px solid $sidebar-background;
 
-      &:hover{
-        background-color: lighten($color-sidebar-bg, $sidebar-bg-modifier);
+      &:hover {
+        background-color: $sidebar-background-light;
+        border-left: 3px solid $sidebar-background-light;
       }
 
       .menu-icon:before {
         content: "\f104";
+      }
+
+      + .submenu {
+        border-left: 3px solid $sidebar-background-light;
+
+        + .submenu {
+          border-left-color: $sidebar-background-lighter;
+        }
       }
     }
   }
@@ -222,32 +273,32 @@ pre, code {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: lighten($color-sidebar-bg, $sidebar-bg-modifier);
-    
-    & {
-      border-bottom: 1px solid lighten($color-sidebar-bg, ($sidebar-bg-modifier * 2));
-    }
+    background-color: $sidebar-background-light;
+    border-left: 3px solid $sidebar-color;
 
     li {
       padding: 0;
 
       a {
-        padding: 0.5rem 0.8rem;
-        
+        font-size: 0.85rem;
+        padding: $padding-md $padding-md + 2rem;
+        border-left-color: $sidebar-background-light;
+
+        &.has-submenu {
+          border-left-color: $sidebar-color;
+
+          &.collapsed {
+            border-left-color: $sidebar-background-light;
+          }
+        }
+
         &:hover {
-          background-color: lighten($color-sidebar-bg, ($sidebar-bg-modifier * 2));
+          background-color: $sidebar-background-lighter;
         }
       }
 
       &.divider {
-        margin: 0;
-      }
-      
-      ul {
-        li {
-          padding-left: 1rem;
-          font-size: 0.9rem;
-        }
+        margin: ($spacer * 0.3) 0;
       }
     }
   }
