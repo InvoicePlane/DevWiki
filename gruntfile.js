@@ -91,14 +91,13 @@ module.exports = function (grunt) {
     });
 
     // Register tasks
-    grunt.registerTask("build", [
+    grunt.registerTask('default', ['dev']);
+
+    grunt.registerTask("dev", [
         "clean",
         "sass",
         "jshint",
-        "uglify"
-    ]);
-    grunt.registerTask("dev", [
-        "build",
+        "uglify",
         "watch"
     ]);
 
