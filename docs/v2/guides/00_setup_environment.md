@@ -5,12 +5,16 @@ If you want to work on InvoicePlane you should setup your working environment wi
 
 ## Basic requirements
 
-You need to install the following libraries / apps / dependencies first to work on InvoicePlane
+You need to install the following libraries / apps / dependencies to work on InvoicePlane
 
 * [Composer](https://getcomposer.org/doc/00-intro.md)
-* [NodeJS](https://nodejs.org/en/) (version 4.4 LTS)
-* [Grunt CLI](https://github.com/gruntjs/grunt-cli)
-* [Bower](http://bower.io/)
+* [NodeJS](https://nodejs.org/en/) (version 4.4 LTS) with the following packages
+    * [ESLint](http://eslint.org/docs/user-guide/command-line-interface)
+    * [Grunt CLI](https://github.com/gruntjs/grunt-cli)
+    * [Bower](http://bower.io/)
+* [Ruby](https://www.ruby-lang.org/en/) (version >= 2.2.0) with the following gems:
+    * [SASS](http://sass-lang.com/install)
+    * [SCSS Lint](https://github.com/brigade/scss-lint)
 
 
 ## 1. The repository
@@ -29,9 +33,11 @@ As all libraries and the codeigniter core are handled by Composer you have to lo
 
 ```bash
 $ composer install
+$ npm install
+$ bower install
 ```
 
-Composer will then load all dependencies and copy them to the correct directories.
+Composer, NPM and Bower will then load all dependencies and copy them to the correct directories.
 
 
 ## 3. Compile all assets

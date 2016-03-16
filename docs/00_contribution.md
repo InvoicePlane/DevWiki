@@ -14,14 +14,15 @@ If you are not familiar with PHP or coding in general you could also help us in 
 ### 2. Get familiar with our Development Guidelines
 We are following some strict development guidelines while developing.
 
-#### PHP
-Coding Standard: [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+**PHP** - Coding standard is [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
 
-#### JavaScript
-Use JShint to check your JavaScript code and resolve all code issues
+**JavaScript** - We use jQuery to make InvoicePlane functional.
 
-#### CSS
-We use [SASS](http://sass-lang.com/) only.
+**CSS** - We use [SASS](http://sass-lang.com/) to compile the CSS files.
+
+#### Assets check
+
+All assets (JavaScript, SCSS) files are checked for code conventions before they are compiled.
 
 ### Tools for development
 We received some licenses for commercial development tools you can use if you want. Please contact use at mail@invoiceplane.com to get the license / access as we can't publish them here.
