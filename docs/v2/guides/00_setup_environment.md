@@ -12,6 +12,7 @@ You need to install the following libraries / apps / dependencies to work on Inv
     * [ESLint](http://eslint.org/docs/user-guide/command-line-interface)
     * [Grunt CLI](https://github.com/gruntjs/grunt-cli)
     * [Bower](http://bower.io/)
+    * [node-sass](https://github.com/sass/node-sass)
 * [Ruby](https://www.ruby-lang.org/en/) (version >= 2.2.0) with the following gems:
     * [SASS](http://sass-lang.com/install)
     * [SCSS Lint](https://github.com/brigade/scss-lint)
@@ -48,3 +49,7 @@ All assets (CSS and JavaScript) are compiled by libraries and actions which are 
 $ grunt
 ```
 Grunt will then compile all assets and enter the watch mode after it. Grunt watches all source files for changes and will start compiling again if a file was changed.
+
+### Sass Lint and ESLint
+
+Most of the .scss and .js files will be automatically checked against predefined code style guides. While running `grunt` after changing assets you may get errors by either Sass Lint (.scss) or ESLint (.js) with descriptions of the found problems. Please resolve these issues before commiting anything. Pull requests will not be merged until all code conventions are followed.
